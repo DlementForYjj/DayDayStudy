@@ -53,11 +53,11 @@ public class test implements Cloneable{
 	public static void main(String[] args)  {
 		
 		List<String> list = IOUtil.readFileList(DEFAULT_FILE_PATH+"test.txt");
-		List<String> list2 = IOUtil.readFileList(DEFAULT_FILE_PATH+"test2.txt");
+//		List<String> list2 = IOUtil.readFileList(DEFAULT_FILE_PATH+"test2.txt");
 		int i=0;
 		for(String l : list) {
 			
-			System.out.println("INSERT INTO STAT_ORG(per_org,org_code) values('"+l+"','"+list2.get(i)+"');");
+			System.out.println("INSERT INTO STAT_ORG(per_org,org_code) values('"+l+"','"+list.get(i)+"');");
 			i++;
 		}
 //		String sql = "";
